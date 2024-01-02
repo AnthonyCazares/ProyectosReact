@@ -444,9 +444,6 @@ h2 {
   padding: 5px;
 }
 #portfolio-container {
-  position: fixed;
-  top: 150px;
-  left: 420px;
   padding: 30px;
   display: grid;
   place-items: center;

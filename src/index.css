@@ -1,0 +1,462 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: rgb(36, 63, 88);
+  display: grid;
+  place-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.example_c {
+  transition: all 0.4s ease 0s;
+}
+.example_c:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+/* sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding-top: 80px;
+}
+.iconos {
+  height: 30px;
+  width: 30px;
+}
+#botontodo {
+  background-color: #ecedee;
+
+  color: black;
+  font-weight: 500;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 45px;
+  transition: all 0.4s ease 0s;
+}
+#botontodo:hover {
+  transition: all 0.4s ease 0s;
+
+  scale: 1.05;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 40px;
+  margin-left: 20px;
+}
+.sidebar li img {
+  margin-top: 1px;
+  margin-right: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* pokemon */
+
+.pokimon {
+  padding-top: 130px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.pokemon-card {
+  width: 250px;
+  height: 330px;
+  border: solid black;
+  text-align: center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: #eff3ff;
+}
+h2 {
+  color: black;
+  padding-bottom: 10px;
+  background-color: #eff3ff;
+  border-radius: 10px;
+  padding: 8px;
+}
+.aidi {
+  border: 2px solid black;
+  width: 50px;
+  border-radius: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.pokemon-image {
+  width: 180px;
+
+  height: 200px;
+  padding-top: 30px;
+}
+
+.pokemon-info {
+  font-family: "Poppins", sans-serif;
+
+  padding-top: 30px;
+}
+
+.button-pokimon {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: solid black;
+  margin-bottom: 180px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* lista todo */
+
+.todo {
+  height: 100vh;
+  width: 500px;
+  display: grid;
+  place-items: center;
+}
+.todo-titulo {
+  padding: 15px;
+  color: white;
+}
+.todo-container {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  width: 500px;
+}
+.botonad {
+  margin-left: 10px;
+  width: 85px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.kk {
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.buttontodo {
+  background-color: white;
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#lipu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  background-color: #edf2f8;
+  border: 2px solid black;
+  padding-left: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+/* calculadora */
+
+.calcu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titucalcu {
+  display: grid;
+  place-items: center;
+}
+.calculator {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.titulocalc {
+  color: white;
+  margin-bottom: -360px;
+}
+.inputcalc {
+  width: 100%;
+  background-color: #1c1c1c;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: solid #d4d4d2;
+  border-radius: 5px;
+  color: #d4d4d2;
+}
+.funciones {
+  background-color: #ff9500;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.grises {
+  background-color: #d4d4d2;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.botones {
+  background-color: #d4d4d2;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d4d4d2;
+}
+
+/* tic tac */
+
+.board {
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.board h1 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.board button {
+  padding: 8px 12px;
+  margin: 25px;
+  background: white;
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+  width: 100px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.board button:hover {
+  background: #eee;
+  color: #222;
+}
+
+.board .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  width: fit-content;
+  position: relative;
+  border-radius: 10px;
+}
+
+.turn .square,
+.winner .square {
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  border-color: transparent;
+}
+
+.square.is-selected {
+  background: transparent;
+}
+
+.winner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.winner .text {
+  background: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.winner .win {
+  margin: 0 auto;
+  width: fit-content;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 48px;
+  background-color: white;
+  border: solid black;
+}
+
+.home-button {
+  position: fixed;
+  top: 30px;
+  font-weight: 600;
+  right: 30px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.home-button:hover {
+  transition: all 0.4s ease 0s;
+
+  scale: 1.1;
+}
+
+.iconosdiv {
+  margin-top: 30px;
+
+  display: flex;
+}
+.iconosdiv h3 {
+  margin-top: 13px;
+  margin-right: 30px;
+}
+.iconoss {
+  margin-right: 50px;
+  transition: all 0.4s ease 0s;
+  padding: 10px;
+}
+.iconoss:hover {
+  scale: 1.2;
+  transition: all 0.4s ease 0s;
+}
+
+.reacticon {
+  margin-left: 5px;
+}
+.svgicons {
+  margin-left: 5px;
+}
+
+.titulo {
+  color: #ecedee;
+
+  padding-bottom: 30px;
+}
+
+#portfolio-container h3 {
+  color: white;
+}
+
+.lista {
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.lista li {
+  color: white;
+  padding: 5px;
+}
+#portfolio-container {
+  position: fixed;
+  top: 150px;
+  left: 420px;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.4s ease 0s;
+  font-size: 18px;
+}
+#portfolio-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.4s ease 0s;
+}

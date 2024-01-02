@@ -78,9 +78,9 @@ const Home = () => {
         </li>
         <li>
           A <strong>Random pokemon generator</strong> with the pokemon API using
-          Fetch
+          Fetch,
           <br />
-          and useState and useEffect hooks
+          useState and useEffect hooks
         </li>
         <li>
           A <strong>Todo list App</strong> using useState hook

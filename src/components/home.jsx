@@ -92,7 +92,7 @@ const Home = () => {
       </ul>
       <div className="iconosdiv">
         <h3>My links:</h3>
-        <a href="">
+        <a href="https://www.linkedin.com/in/anthony-cazares/">
           <svg
             className="iconoss"
             width="50"
@@ -108,7 +108,7 @@ const Home = () => {
           </svg>
         </a>
 
-        <a href="">
+        <a href="https://github.com/AnthonyCazares">
           <svg
             className="iconoss"
             viewBox="0 0 256 250"
@@ -125,7 +125,7 @@ const Home = () => {
           </svg>
         </a>
 
-        <a href="">
+        <a href="mailto:anthonycazaresh@gmail.com">
           <svg
             className="iconoss"
             xmlns="http://www.w3.org/2000/svg"
